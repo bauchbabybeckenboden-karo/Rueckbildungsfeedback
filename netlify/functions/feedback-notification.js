@@ -21,26 +21,26 @@ exports.handler = async (event) => {
   const stars = (n) => n && n !== '–' ? '★'.repeat(Number(n)) + '☆'.repeat(5 - Number(n)) : '–';
   const row = (label, value) =>
     `<tr>
-      <td style="padding:8px 16px 8px 0;color:#7a5c4a;font-size:13px;font-weight:500;vertical-align:top;white-space:nowrap;">${label}</td>
-      <td style="padding:8px 0;color:#2a1a1a;font-size:14px;font-weight:300;line-height:1.6;">${value || '–'}</td>
+      <td style="padding:8px 16px 8px 0;color:#8B6464;font-size:13px;font-weight:500;vertical-align:top;white-space:nowrap;">${label}</td>
+      <td style="padding:8px 0;color:#3D2B2B;font-size:14px;font-weight:300;line-height:1.6;">${value || '–'}</td>
     </tr>`;
 
   const section = (title, rows) =>
     `<div style="margin-bottom:32px;">
-      <h3 style="font-family:Georgia,serif;font-size:18px;font-weight:400;color:#5c2d2d;margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid #ede5dc;">${title}</h3>
+      <h3 style="font-family:Georgia,serif;font-size:18px;font-weight:400;color:#3D2B2B;margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid #F6EBE8;">${title}</h3>
       <table style="width:100%;border-collapse:collapse;">${rows}</table>
     </div>`;
 
   const html = `<!DOCTYPE html>
 <html lang="de">
 <head><meta charset="UTF-8"/></head>
-<body style="background:#f7f2ee;margin:0;padding:32px 16px;font-family:'Helvetica Neue',Arial,sans-serif;">
+<body style="background:#F6EBE8;margin:0;padding:32px 16px;font-family:'Helvetica Neue',Arial,sans-serif;">
 <div style="max-width:600px;margin:0 auto;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 16px rgba(92,45,45,0.08);">
-  <div style="background:#7a3f3f;padding:32px 36px;">
-    <p style="margin:0 0 6px;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c4a882;font-weight:300;">Bauch · Baby · Beckenboden</p>
-    <h1 style="margin:0;font-family:Georgia,serif;font-size:26px;font-weight:300;color:#f7f2ee;">Neues Kurs-Feedback</h1>
+  <div style="background:#8B6464;padding:32px 36px;">
+    <p style="margin:0 0 6px;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#C4A0A0;font-weight:300;">Bauch · Baby · Beckenboden</p>
+    <h1 style="margin:0;font-family:Georgia,serif;font-size:26px;font-weight:300;color:#F6EBE8;">Neues Kurs-Feedback</h1>
     <p style="margin:10px 0 0;font-size:14px;color:rgba(247,242,238,0.65);font-weight:300;">
-      <strong style="color:#c4a882;">${data.kurs}</strong> &nbsp;·&nbsp; ${data.eingereicht_am}
+      <strong style="color:#C4A0A0;">${data.kurs}</strong> &nbsp;·&nbsp; ${data.eingereicht_am}
     </p>
   </div>
   <div style="padding:36px;">
@@ -74,8 +74,8 @@ exports.handler = async (event) => {
     ].join(''))}
 
   </div>
-  <div style="padding:20px 36px 28px;background:#f7f2ee;text-align:center;">
-    <p style="margin:0;font-size:12px;color:#8a7060;font-style:italic;font-weight:300;">
+  <div style="padding:20px 36px 28px;background:#F6EBE8;text-align:center;">
+    <p style="margin:0;font-size:12px;color:#8B6464;font-style:italic;font-weight:300;">
       Dieses Feedback wurde anonym über das Kurs-Feedback-Formular eingereicht.
     </p>
   </div>
