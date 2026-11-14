@@ -5,7 +5,7 @@
 // gekürzte Texte, begrenzte Feldanzahl, HTML wird maskiert.
 
 const EMPFAENGER = "bauch.baby.beckenboden@gmail.com";
-const ABSENDER = "Karo · Bauch · Baby · Beckenboden <kontakt@bauch-baby-beckenboden.com>";
+const ABSENDER = "Karo · Wunderwerk Frau <kontakt@bauch-baby-beckenboden.com>";
 const LOGO = "https://raw.githubusercontent.com/bauchbabybeckenboden-karo/Logos/main/Clitlogo-creme.png";
 
 const LABELS = {

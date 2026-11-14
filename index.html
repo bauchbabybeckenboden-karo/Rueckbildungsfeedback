@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kurs-Feedback · Somatic Beckenboden · Bauch Baby Beckenboden</title>
+  <title>Kurs-Feedback · Somatic Beckenboden · Wunderwerk Frau</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --burgundy:      #7a3f3a;
+      --burgundy:      #8B6464;
       --burgundy-dark: #3D2B2B;
       --cream:         #F6EBE8;
       --cream-light:   #F6EBE8;
@@ -437,25 +437,53 @@
       line-height: 1.8;
       color: var(--text-muted);
     }
-  </style>
+  
+  /* ── Wunderwerk Frau: Kopfbereich (einheitlich für alle Seiten) ── */
+  .ww-header { background:#8B6464; color:#F3E9E5; padding:24px 20px; }
+  .ww-inner { max-width:760px; margin:0 auto; display:flex; align-items:center; gap:20px; text-align:left; }
+  .ww-in-hero { margin-bottom:30px; }
+  .ww-logo { height:88px; width:auto; flex-shrink:0; display:block; }
+  .ww-text { min-width:0; }
+  .ww-name { font-family:'Cormorant Garamond', Georgia, serif; font-weight:700; font-size:32px; line-height:1.1; letter-spacing:.5px; color:#F3E9E5; }
+  .ww-line { height:1px; background:#F3E9E5; max-width:320px; margin:8px 0; }
+  .ww-sub { font-family:Arial, Helvetica, sans-serif; font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#F3E9E5; }
+  .ww-tag { font-family:'Cormorant Garamond', Georgia, serif; font-style:italic; font-size:15px; line-height:1.35; color:#F3E9E5; margin-top:6px; }
+  .ww-topic { font-family:Arial, Helvetica, sans-serif; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:#8B6464; text-align:center; margin:0 0 18px; }
+  .ww-topic-hell { color:#F3E9E5; text-align:left; margin:0 0 14px; }
+  @media (max-width:540px) {
+    .ww-inner { flex-direction:column; text-align:center; gap:12px; }
+    .ww-line { margin:8px auto; }
+    .ww-logo { height:76px; }
+    .ww-name { font-size:28px; }
+    .ww-topic-hell { text-align:center; }
+  }
+
+  /* ── Wunderwerk Frau: Lesbarkeit ── */
+  .hero-eyebrow { color:#F3E9E5 !important; letter-spacing:3px !important; }
+  .hero-h1-italic { color:#E8D5D0 !important; }
+  .stars label { color:#A88383 !important; }
+  .hero-desc { color:#F3E9E5 !important; }
+  .stars input:checked ~ label, .stars label:hover, .stars label:hover ~ label { color:#8B6464 !important; }
+</style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- HERO -->
   <div class="hero">
-    <div class="hero-brand">
-      <div class="hero-logo">
-        <img src="logo.png" alt="Bauch Baby Beckenboden Logo">
-      </div>
-      <div class="hero-brand-text">
-        <div class="hero-brand-name">Bauch · Baby · Beckenboden</div>
-        <div class="hero-brand-sub">Karoline Hartwig</div>
+    <div class="ww-inner ww-in-hero">
+      <img class="ww-logo" src="https://raw.githubusercontent.com/bauchbabybeckenboden-karo/Logos/main/Clitlogo-creme.png" alt="Wunderwerk Frau Logo" />
+      <div class="ww-text">
+        <div class="ww-name">Wunderwerk Frau</div>
+        <div class="ww-line"></div>
+        <div class="ww-sub">Bauch &middot; Baby &middot; Beckenboden</div>
+        <div class="ww-tag">Trageberatungen sowie Sport-, Beckenboden- &amp; somatische Yogakurse für Frauen</div>
       </div>
     </div>
-    <div class="hero-eyebrow">Deine Meinung zählt</div>
+    <div class="hero-eyebrow">Deine Meinung zählt · Kurs-Feedback</div>
     <h1 class="hero-h1">Somatic Beckenboden</h1>
     <span class="hero-h1-italic">Dein Feedback zum Beckenbodenkurs</span>
-    <p class="hero-desc">Der Beckenbodenkurs hatte nun Zeit nachzuwirken – und ich freue mich sehr, wenn du dir ein paar Minuten nimmst, um mir dein Feedback zu geben. Es hilft mir, den Kurs weiterzuentwickeln und besser auf deine Bedürfnisse nach der Geburt abzustimmen. Herzlichen Dank!</p>
+    <p class="hero-desc">Der Beckenbodenkurs hatte nun Zeit nachzuwirken – und ich freue mich sehr, wenn Du Dir ein paar Minuten nimmst, um mir Dein Feedback zu geben. Es hilft mir, den Kurs weiterzuentwickeln und besser auf Deine Bedürfnisse nach der Geburt abzustimmen. Herzlichen Dank!</p>
   </div>
 
   <!-- CONTENT -->
@@ -481,7 +509,7 @@
         </div>
 
         <div class="question">
-          <label class="question-label">Wie lang lag deine letzte Entbindung zurück?</label>
+          <label class="question-label">Wie lang lag Deine letzte Entbindung zurück?</label>
           <div class="options inline">
             <label class="option-item">
               <input type="radio" name="geburt_zeitraum" value="3-6 Wochen">
@@ -503,8 +531,8 @@
         </div>
 
         <div class="question">
-          <label class="question-label">Wie war dein Beckenboden-Zustand vor dem Kurs? <span class="required">*</span></label>
-          <span class="question-hint">Mehrfachnennung möglich – wie du dich damals wirklich gefühlt hast.</span>
+          <label class="question-label">Wie war Dein Beckenboden-Zustand vor dem Kurs? <span class="required">*</span></label>
+          <span class="question-hint">Mehrfachnennung möglich – wie Du Dich damals wirklich gefühlt hast.</span>
           <div class="options">
             <label class="option-item checkbox">
               <input type="checkbox" name="zustand_vorher" value="angespannt">
@@ -538,7 +566,7 @@
         </div>
 
         <div class="question">
-          <label class="question-label">Hast du während des Kurses Schmerzen, Beschwerden oder Unangenehmes erlebt?</label>
+          <label class="question-label">Hast Du während des Kurses Schmerzen, Beschwerden oder Unangenehmes erlebt?</label>
           <div class="options inline">
             <label class="option-item">
               <input type="radio" name="schmerz_kurs" value="nein">
@@ -578,7 +606,7 @@
 
         <div class="question">
           <label class="question-label">Wie war das Tempo des Kurses?</label>
-          <span class="question-hint">Somatische Arbeit findet in ihrem eigenen Rhythmus statt – für dich perfekt oder zu langsam/schnell?</span>
+          <span class="question-hint">Somatische Arbeit findet in ihrem eigenen Rhythmus statt – für Dich perfekt oder zu langsam/schnell?</span>
           <div class="options inline">
             <label class="option-item">
               <input type="radio" name="tempo" value="zu langsam">
@@ -596,7 +624,7 @@
         </div>
 
         <div class="question">
-          <label class="question-label">Merkst du eine Veränderung in deinem Beckenboden nach dem Kurs? <span class="required">*</span></label>
+          <label class="question-label">Merkst Du eine Veränderung in Deinem Beckenboden nach dem Kurs? <span class="required">*</span></label>
           <div class="options">
             <label class="option-item">
               <input type="radio" name="veraenderung_ja" value="ja">
@@ -614,9 +642,9 @@
         </div>
 
         <div class="question">
-          <label class="question-label">Falls ja: Welche Veränderung nimmst du wahr?</label>
+          <label class="question-label">Falls ja: Welche Veränderung nimmst Du wahr?</label>
           <span class="question-hint">z. B. weniger Spannung, bessere Wahrnehmung, sicherer im Alltag, mehr Stabilität …</span>
-          <textarea name="veraenderung_beschreibung" placeholder="Beschreib gerne in deinen eigenen Worten …"></textarea>
+          <textarea name="veraenderung_beschreibung" placeholder="Beschreib gerne in Deinen eigenen Worten …"></textarea>
         </div>
       </div>
 
@@ -628,7 +656,7 @@
         </div>
 
         <div class="question">
-          <label class="question-label">Wie ist dein Körperbewusstsein durch die somatische Arbeit geworden?</label>
+          <label class="question-label">Wie ist Dein Körperbewusstsein durch die somatische Arbeit geworden?</label>
           <div class="scale-wrap">
             <span class="scale-label-text">Gleich geblieben</span>
             <div class="scale-buttons">
@@ -643,7 +671,7 @@
         </div>
 
         <div class="question">
-          <label class="question-label">Fiel dir die „Verlangsamung" und die somatische Herangehensweise leicht?</label>
+          <label class="question-label">Fiel Dir die „Verlangsamung" und die somatische Herangehensweise leicht?</label>
           <span class="question-hint">Oder war es ungewohnt / schwer, in diesem Tempo zu sein?</span>
           <div class="options">
             <label class="option-item">
@@ -662,7 +690,7 @@
         </div>
 
         <div class="question">
-          <label class="question-label">Wie präsent warst du in deinem Körper während der Einheiten?</label>
+          <label class="question-label">Wie präsent warst Du in Deinem Körper während der Einheiten?</label>
           <div class="scale-wrap">
             <span class="scale-label-text">Sehr abgelenkt</span>
             <div class="scale-buttons">
@@ -685,7 +713,7 @@
         </div>
 
         <div class="question">
-          <label class="question-label">Machst du die Übungen zu Hause weiter?</label>
+          <label class="question-label">Machst Du die Übungen zu Hause weiter?</label>
           <div class="options">
             <label class="option-item">
               <input type="radio" name="zuhause_uebt" value="regelmaessig">
@@ -707,8 +735,8 @@
         </div>
 
         <div class="question">
-          <label class="question-label">Brauchst du mehr Anleitung für Zuhause?</label>
-          <span class="question-hint">Was würde dir helfen, regelmäßig zu üben?</span>
+          <label class="question-label">Brauchst Du mehr Anleitung für Zuhause?</label>
+          <span class="question-hint">Was würde Dir helfen, regelmäßig zu üben?</span>
           <div class="options">
             <label class="option-item checkbox">
               <input type="checkbox" name="zuhause_hilfe" value="video">
@@ -742,7 +770,7 @@
         </div>
 
         <div class="question">
-          <label class="question-label">Würdest du den Kurs weiterempfehlen?</label>
+          <label class="question-label">Würdest Du den Kurs weiterempfehlen?</label>
           <div class="stars">
             <input type="radio" name="empfehlen" id="emp5" value="5"><label for="emp5">★</label>
             <input type="radio" name="empfehlen" id="emp4" value="4"><label for="emp4">★</label>
@@ -754,18 +782,18 @@
 
         <div class="question">
           <label class="question-label">Welche Themen fehlen für weitere Beckenbodenkurse?</label>
-          <span class="question-hint">Was hättest du dir neben Beckenboden noch gewünscht?</span>
+          <span class="question-hint">Was hättest Du Dir neben Beckenboden noch gewünscht?</span>
           <textarea name="weitere_themen" placeholder="z. B. Beckenboden & Sexualität, Beckenboden im Alltag, Rückengesundheit, Entspannung …"></textarea>
         </div>
 
         <div class="question">
-          <label class="question-label">Was hat dir im Kurs am besten gefallen oder hat dir besonders geholfen? <span class="required">*</span></label>
+          <label class="question-label">Was hat Dir im Kurs am besten gefallen oder hat Dir besonders geholfen? <span class="required">*</span></label>
           <span class="question-hint">Ein Moment, eine Übung, die Art wie ich unterrichte, die Gruppe …</span>
           <textarea name="positives" placeholder="Dein ehrliches Feedback ist mir wertvoll …" required></textarea>
         </div>
 
         <div class="question">
-          <label class="question-label">Gibt es noch etwas, das du mir mitgeben möchtest?</label>
+          <label class="question-label">Gibt es noch etwas, das Du mir mitgeben möchtest?</label>
           <textarea name="sonstiges" placeholder="Kritik, Wünsche, Gedanken …"></textarea>
         </div>
       </div>
@@ -779,7 +807,7 @@
 
         <div class="question">
           <label class="question-label">Hast Du offene Fragen zum Thema Beckenbodenübungen im Alltag / Beckenbodenschonendes Verhalten im Alltag?</label>
-          <span class="question-hint">Ich antworte dir gerne – gib mir bitte auch an, wie ich dich am besten erreiche (siehe Datenschutzerklärung).</span>
+          <span class="question-hint">Ich antworte Dir gerne – gib mir bitte auch an, wie ich Dich am besten erreiche (siehe Datenschutzerklärung).</span>
         </div>
 
         <div class="question">
